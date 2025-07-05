@@ -4,14 +4,14 @@ A Python implementation of statistical tests for the Markov property in sequenti
 
 ## Overview
 
-This package implements Algorithm 1 from the paper **"Does the Markov Decision Process Fit the Data: Testing for the Markov Property in Sequential Decision Making"** (ICML 2020). The algorithm uses random forest-based methods to test whether observed sequential data satisfies the Markov property.
+This package implements Algorithm 1 from the paper **"Does the Markov Decision Process Fit the Data: Testing for the Markov Property in Sequential Decision Making"** (ICML 2020).
 
 ## Features
 
 - **Markov Property Testing**: Statistical test to determine if your data follows the Markov assumption
 - **Random Forest-Based**: Uses quantile regression forests for robust conditional characteristic function estimation
 - **Easy-to-Use Interface**: Simple API for testing your own sequential decision data
-- **Cross-Platform**: Compatible with Windows, macOS, and Linux
+- **Cross-Platform**: Compatible with Windows (originally mac?)
 
 ## Installation
 
@@ -77,7 +77,7 @@ else:
 
 ## Data Format
 
-Your data should be organized as:
+Your data should be organised as:
 
 ```python
 data = [trajectory1, trajectory2, ..., trajectoryN]
