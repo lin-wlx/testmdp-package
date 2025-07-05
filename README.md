@@ -98,17 +98,6 @@ See the `examples/` folder for detailed usage examples:
 - `test_data_example.py`: Basic usage with synthetic data
 - `test_basic.py`: Simple import and functionality test
 
-## Algorithm Details
-
-The algorithm tests the null hypothesis:
-**H₀: P(X_{t+1} | X_t, A_t, X_{t-1}, ...) = P(X_{t+1} | X_t, A_t)**
-
-If the p-value is:
-- **< 0.05**: Reject H₀ (data is likely non-Markov)
-- **≥ 0.05**: Accept H₀ (data is consistent with Markov property)
-
-## Testing
-
 Run the basic functionality test:
 
 ```bash
