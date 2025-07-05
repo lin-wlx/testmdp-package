@@ -1,5 +1,4 @@
 # testmdp-package
-# TestMDP Package
 
 A Python implementation of statistical tests for the Markov property in sequential decision-making data, based on the research by Shi et al.
 
