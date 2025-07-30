@@ -1,4 +1,3 @@
-# test_data_example.py
 # Simple test data to learn Algorithm 1
 
 import numpy as np
@@ -53,9 +52,9 @@ def test_algorithm_1():
     # Import the testing function
     try:
         from _core_test_fun import test
-        print("✓ Successfully imported test function")
+        print("Successfully imported test function")
     except ImportError as e:
-        print(f"✗ Import failed: {e}")
+        print(f"Import failed: {e}")
         return
     
     # Create test data
@@ -73,17 +72,17 @@ def test_algorithm_1():
     print("\n--- Running Algorithm 1 ---")
     try:
         result = test(data=data, J=1)  # J=1 means test for 1st order Markov property
-        print(f"✓ Algorithm completed!")
+        print(f"Algorithm completed!")
         print(f"p-value: {result}")
         
         # Interpret result
         if result < 0.05:
-            print("→ Data does NOT satisfy Markov property (p < 0.05)")
+            print("Data does NOT satisfy Markov property (p < 0.05)")
         else:
-            print("→ Data appears to satisfy Markov property (p ≥ 0.05)")
+            print("Data appears to satisfy Markov property (p ≥ 0.05)")
             
     except Exception as e:
-        print(f"✗ Algorithm failed: {e}")
+        print(f"Algorithm failed: {e}")
 
 if __name__ == "__main__":
     test_algorithm_1()
