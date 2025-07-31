@@ -48,7 +48,7 @@ sys.path.append('testmdp')
 from _core_test_fun import test
 import numpy as np
 
-# Prepare your data as a list of trajectories
+# Prepare data as a list of trajectories
 # Each trajectory is [X, A] where:
 # X = states over time (T x state_dim array)
 # A = actions over time (T x action_dim array)
@@ -65,14 +65,14 @@ trajectory2 = [
 
 data = [trajectory1, trajectory2]
 
-# Test for 1st-order Markov property
+# Test for 1st-order Markov property, J=1
 p_value = test(data=data, J=1)
 
 print(f"p-value: {p_value}")
 if p_value < 0.05:
-    print("→ Data does NOT satisfy Markov property (p < 0.05)")
+    print("Data does NOT satisfy Markov property (p < 0.05)")
 else:
-    print("→ Data appears to satisfy Markov property (p ≥ 0.05)")
+    print("Data appears to satisfy Markov property (p ≥ 0.05)")
 ```
 
 ## Data Format
